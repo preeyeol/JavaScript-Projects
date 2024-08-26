@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<style>
+.container{
+    box-sizing: border-box;
+ background-color: brown;
+ width: 50%;
+ height: 60%;
+ border: 2px solid black;
+ text-align: center;
+ margin-left: 20rem;
+ margin-top: 5rem;
+
+}
+    input{
+        width: 5rem;
+        margin: 5px;
+        padding: 4px;
+    }
+
+    button{
+        padding: 2px;
+        margin: 5px;
+    }
+
+    body{
+        background-color: burlywood;
+    }
+
+
+</style>
+<body>
+
+    <main class="container">
+        <h1>CALCULATOR</h1>
+    
+        <input id="input1" type="number" placeholder="Input value">
+        <input id="input2" type="number" placeholder="Input value">
+        <select id="select"  name="operator" >
+            <option value="" selected disabled>Choose Operator</option>
+            <option value="add"><button>ADDITION</button></option>
+            <option value="sub"><button>SUBSTRACTION</button></option>
+            <option value="mul"><button>MULTIPLY</button></option>
+            <option value="div"><button>DIVISON</button></option>
+        </select>
+        <button id="calculate" >Calculate</button>
+        <button id="reset" >Reset</button>
+    
+    <h4>The Result:<span id="result"></span></h4>
+    </main>
+
+
+    <script src="calculator.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
